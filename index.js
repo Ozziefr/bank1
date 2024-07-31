@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const users = {
     dzxgamer: { password: "1234", balance: 0 },
     moumouSTOP: { password: "youcef.hdr.", balance: 110000 },
-    shadow: { password: "tizkane", balance: 60000 },
+    shadow: { password: "tizkane", balance: 70000 },
     liljay: { password: "jadhanine", balance: 0 },
     kamal: { password: "kamal221199", balance: 30000 },
     Eclairy: { password: "halamadrid", balance: 76400 },
