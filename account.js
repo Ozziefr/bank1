@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     liljay: { password: "jadhanine", balance: 0 },
     kamal: { password: "kamal221199", balance: 30000 },
     Eclairy: { password: "halamadrid", balance: 76400 },
-    Alpha: { password: "AlphaX091", balance: 0 },
+    Alpha: { password: "AlphaX091", balance: 100000 },
   };
 
   const username = sessionStorage.getItem("username");
