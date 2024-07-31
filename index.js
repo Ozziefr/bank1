@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     shadow: { password: "tizkane", balance: 60000 },
     liljay: { password: "jadhanine", balance: 0 },
     kamal: { password: "kamal221199", balance: 30000 },
-    player3: { password: "securepassword", balance: 0 },
+    Eclairy: { password: "halamadrid", balance: 62400 },
   };
 
   loginForm.addEventListener("submit", (event) => {
