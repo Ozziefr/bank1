@@ -1,175 +1,65 @@
 body {
   font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
 }
 
-header {
-  background-color: #4caf50;
-  color: white;
-  padding: 1em 0;
-  text-align: center;
-}
-
-header h1 {
-  margin: 0;
+nav {
+  background-color: #333;
+  padding: 10px;
 }
 
 nav ul {
-  list-style: none;
+  list-style-type: none;
+  margin: 0;
   padding: 0;
-  text-align: center;
 }
 
 nav ul li {
   display: inline;
-  margin: 0 1em;
+  margin-right: 10px;
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
+  padding: 8px 16px;
+  background-color: #444;
+  border-radius: 4px;
+  transition: background-color 0.3s;
 }
 
-main {
-  flex: 1;
-  padding: 1em;
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
+nav ul li a:hover {
+  background-color: #555;
 }
 
 section {
-  margin-bottom: 2em;
-}
-
-section h2 {
-  color: #4caf50;
-}
-
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 1em 0;
-  width: 100%;
-  position: relative;
-}
-
-form {
-  margin-top: 1em;
-}
-
-label {
-  display: inline-block;
-  width: 100px;
-}
-
-input {
-  margin-bottom: 1em;
-}
-
-button {
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  padding: 0.5em 1em;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #45a049;
-}
-
-.center-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  height: 80vh;
-  text-align: center;
-}
-
-.balance-box {
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
   background-color: white;
-  border: 2px solid #4caf50;
-  border-radius: 5px;
-  padding: 1em;
-  margin-top: 1em;
-  font-size: 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
   color: #333;
+  font-size: 24px;
 }
 
-#balance {
-  margin: 0;
+p {
+  color: #666;
+  line-height: 1.6;
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 1024px) {
-  nav ul li {
-    display: block;
-    margin: 0.5em 0;
-  }
-
-  nav ul {
-    text-align: center;
-  }
-
-  form {
-    text-align: center;
-  }
-
-  label {
-    display: block;
-    width: auto;
-    margin: 0 auto;
-  }
+ul {
+  margin-top: 10px;
+  list-style-type: square;
+  padding-left: 20px;
 }
 
-@media (max-width: 768px) {
-  header {
-    padding: 0.5em 0;
-  }
-
-  header h1 {
-    font-size: 1.5em;
-  }
-
-  nav ul li {
-    margin: 0.3em 0;
-  }
-
-  main {
-    padding: 0.5em;
-    width: 90%;
-  }
-
-  .balance-box {
-    font-size: 1.2em;
-  }
-}
-
-@media (max-width: 480px) {
-  header h1 {
-    font-size: 1.2em;
-  }
-
-  nav ul li {
-    margin: 0.2em 0;
-  }
-
-  main {
-    padding: 0.3em;
-    width: 95%;
-  }
-
-  .balance-box {
-    font-size: 1em;
-    padding: 0.5em;
-  }
+ul li {
+  margin-bottom: 10px;
+  color: #555;
 }
