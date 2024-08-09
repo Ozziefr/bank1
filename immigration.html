@@ -34,6 +34,30 @@
           <strong>Process:</strong> Steps to apply for immigration status.
         </li>
       </ul>
+      <h2>Immigration Form</h2>
+      <p>
+        Please fill out the form below to apply for immigration. Note: You can
+        only submit the form once every day.
+      </p>
+      <form id="immigrationForm" onsubmit="return handleSubmit(event)">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required /><br />
+
+        <label for="discord">Discord Username:</label>
+        <input type="text" id="discord" name="discord" required /><br />
+
+        <label for="reason">Reason for Immigration:</label><br />
+        <textarea id="reason" name="reason" rows="4" required></textarea><br />
+
+        <input type="submit" value="Submit" />
+      </form>
+
+      <div id="cardContainer"></div>
+      <!-- Container for the card -->
+      <div id="overlay">
+        <div id="card"></div>
+      </div>
     </section>
   </body>
+  <script src="form.js"></script>
 </html>
