@@ -58,14 +58,22 @@ nav {
   gap: 20px;
   flex-wrap: wrap;
   margin-top: 20px;
-  height: 1000px;
+  height: 500px;
+}
+.monarchy-cards1 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  height: 500px;
 }
 .card:hover {
   transform: scale(1.2); /* Slightly enlarge the card */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow intensity */
   transition: 0.7s;
 }
-.monarchy-cards img {
+.monarchy-cards1 img {
   height: 350px;
   width: 280px;
 }
