@@ -3,13 +3,14 @@
 body {
   font-family: "Raleway", sans-serif;
   background-color: #f4f4f4;
-  height: 280vh;
-  background-image: url("images\ \(1\).jpg");
+  height: 220vh;
+  background-image: url("./71EO5R2tZWL._AC_UF1000\,1000_QL80_.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   margin: 0;
   padding: 0;
+  overflow: ;
 }
 
 nav {
@@ -50,6 +51,7 @@ nav {
 .home {
   text-align: center;
   padding: 20px;
+  box-shadow: black 5px 5px 10px 1px;
 }
 .modal {
   display: none; /* Hidden by default */
@@ -129,12 +131,15 @@ nav {
   transform: scale(1.2); /* Slightly enlarge the card */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow intensity */
   transition: 0.7s;
+  box-shadow: black 5px 5px 10px 1px;
 }
 .monarchy-cards1 img {
   height: 350px;
   width: 280px;
 }
-
+section {
+  box-shadow: black 5px 5px 10px 1px !important;
+}
 .card {
   background-color: white;
   border-radius: 8px;
