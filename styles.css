@@ -58,11 +58,12 @@ nav {
   gap: 20px;
   flex-wrap: wrap;
   margin-top: 20px;
+  height: 500px;
 }
 .card:hover {
   transform: scale(1.2); /* Slightly enlarge the card */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow intensity */
-  transition: 1s;
+  transition: 0.7s;
 }
 .monarchy-cards img {
   height: 350px;
@@ -81,7 +82,7 @@ nav {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  transition: 1s;
+  transition: 0.7s;
 }
 
 .skin-image {
@@ -104,6 +105,43 @@ nav {
 .card-content p {
   margin: 5px 0;
   color: white;
+}
+.news,
+.events,
+.weather,
+.calendar {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.news h2,
+.events h2,
+.weather h2,
+.calendar h2 {
+  font-size: 1.5em;
+}
+.news p,
+.events ul,
+.calendar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.events ul,
+.calendar ul {
+  padding-left: 20px;
+}
+.weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.weather iframe {
+  border: none;
+  width: 100%;
+  height: 200px;
 }
 
 /* Responsive Design */
