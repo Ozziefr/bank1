@@ -51,6 +51,63 @@ nav {
   text-align: center;
   padding: 20px;
 }
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  height: 450px;
+  width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000; /* Ensure it's above other elements */
+  padding: 20px; /* Add padding to space out content */
+  box-sizing: border-box; /* Ensure padding doesn't affect width/height */
+}
+
+.modal-content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+#modal-title {
+  font-size: 40px;
+  margin-top: 0px; /* Add space between title and info */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  text-align: center; /* Center text alignment */
+}
+
+#modal-info {
+  font-size: 25px;
+  margin-top: 50px; /* Ensure some space above the info */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  text-align: center; /* Center text alignment */
+}
+
+.close-btn {
+  position: absolute;
+  top: 0px; /* Position at the top */
+  right: 0px; /* Position at the right */
+  font-size: 40px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.close-btn:hover {
+  color: red;
+  transition: 0.5s;
+}
 
 .monarchy-cards {
   display: flex;

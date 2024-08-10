@@ -37,12 +37,13 @@
           <li><a href="https://finlandweather.netlify.app">Weather</a></li>
           <li>
             <a href="https://finishunion.netlify.app/buisnesses.html"
-              >Buisnesses</a
+              >Businesses</a
             >
           </li>
         </ul>
       </div>
     </nav>
+
     <section class="home">
       <h1>Welcome to New Kingdom Of Finland</h1>
       <p>
@@ -50,27 +51,41 @@
         much more. Our country is a place where innovation meets tradition.
       </p>
       <div class="monarchy-cards1">
-        <div class="card">
+        <div
+          class="card"
+          onclick="showCardInfo('Ozzie_fr', 'Rank: King 🫅','Discord: ozzie_o','Description: 25th King Of New Finland Crowned the 25 April 1500')"
+        >
           <img src="download.png" alt="King Skin" class="skin-image" />
           <div class="card-content">
             <h2>Ozzie_fr</h2>
             <p>Title: King 🫅</p>
           </div>
         </div>
-        <div class="card">
+        <div
+          class="card"
+          onclick="showCardInfo('Zv2Neon', 'Rank: Vice King 🤴', 'Dsicord: nneonv2','Description: Second in comand of the Kingdom')"
+        >
           <img src="download (1).png" alt="Vice King Skin" class="skin-image" />
           <div class="card-content">
             <h2>Zv2Neon</h2>
-            <p>Title: Vice King🤴</p>
+            <p>Title: Vice King 🤴</p>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Info Modal -->
+    <div id="info-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">X</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-info"></p>
+      </div>
+    </div>
+
     <!-- News Section -->
     <section class="news">
       <h2>Latest News</h2>
-
       <p>
         <strong><i>WIP</i></strong>
       </p>
@@ -104,5 +119,7 @@
         </li>
       </ul>
     </section>
+
+    <script src="form.js"></script>
   </body>
 </html>

@@ -40,3 +40,22 @@ function handleSubmit(event) {
 
   return false;
 }
+function showCardInfo(title, ...info) {
+  document.getElementById("modal-title").textContent = title;
+
+  const modalInfo = document.getElementById("modal-info");
+  modalInfo.innerHTML = ""; // Clear any previous content
+
+  // Append each piece of information as a paragraph
+  info.forEach((item) => {
+    const p = document.createElement("p");
+    p.textContent = item;
+    modalInfo.appendChild(p);
+  });
+
+  // Display the modal
+  document.getElementById("info-modal").style.display = "block";
+}
+function closeModal() {
+  document.getElementById("info-modal").style.display = "none";
+}
