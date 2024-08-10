@@ -3,7 +3,7 @@
 body {
   font-family: "Raleway", sans-serif;
   background-color: #f4f4f4;
-  height: 100vh;
+  height: 280vh;
   background-image: url("images\ \(1\).jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -261,4 +261,27 @@ input[type="submit"]:hover {
 .monarchy-requirements ul li {
   margin-bottom: 10px;
   color: #555;
+}
+/* General styling for the history section */
+.history {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+}
+
+.history h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.history h2 {
+  font-size: 1.5em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.history p {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 15px;
 }
