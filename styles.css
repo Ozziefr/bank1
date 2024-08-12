@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
 /* General body and page styles */
 body {
   font-family: "Raleway", sans-serif;
   background-color: #f4f4f4;
   height: 220vh;
-  background-image: url("./71EO5R2tZWL._AC_UF1000\,1000_QL80_.jpg");
+  background-image: url("./71EO5R2tZWL._AC_UF1000,1000_QL80_.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -27,7 +28,7 @@ nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  text-align: center; /* Center align the navigation items */
+  text-align: center;
 }
 
 #nav-links li {
@@ -53,20 +54,22 @@ nav {
   padding: 20px;
   box-shadow: black 5px 5px 10px 1px;
 }
+
 .modal {
-  display: none; /* Hidden by default */
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: white;
   height: 450px;
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  z-index: 1000; /* Ensure it's above other elements */
-  padding: 20px; /* Add padding to space out content */
-  box-sizing: border-box; /* Ensure padding doesn't affect width/height */
+  z-index: 1000;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .modal-content {
@@ -76,30 +79,22 @@ nav {
 }
 
 #modal-title {
-  font-size: 40px;
-  margin-top: 0px; /* Add space between title and info */
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Center content vertically */
-  align-items: center; /* Center content horizontally */
-  text-align: center; /* Center text alignment */
+  font-size: 30px;
+  margin-top: 0px;
+  text-align: center;
 }
 
 #modal-info {
-  font-size: 25px;
-  margin-top: 50px; /* Ensure some space above the info */
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Center content vertically */
-  align-items: center; /* Center content horizontally */
-  text-align: center; /* Center text alignment */
+  font-size: 20px;
+  margin-top: 30px;
+  text-align: center;
 }
 
 .close-btn {
   position: absolute;
-  top: 0px; /* Position at the top */
-  right: 0px; /* Position at the right */
-  font-size: 40px;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
   font-weight: bold;
   color: #333;
   cursor: pointer;
@@ -117,38 +112,31 @@ nav {
   gap: 20px;
   flex-wrap: wrap;
   margin-top: 20px;
-  height: 500px;
+  height: auto;
 }
-.monarchy-cards1 {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 20px;
-  height: 500px;
-}
+
 .card:hover {
-  transform: scale(1.2); /* Slightly enlarge the card */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow intensity */
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   transition: 0.7s;
   box-shadow: black 5px 5px 10px 1px;
 }
-.monarchy-cards1 img {
-  height: 350px;
-  width: 280px;
+
+.monarchy-cards img {
+  height: auto;
+  width: 100%;
+  max-width: 280px;
 }
-section {
-  box-shadow: black 5px 5px 10px 1px !important;
-}
+
 .card {
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   padding: 20px;
   text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-  background-image: url("images\ \(1\).jpg");
+  background-image: url("images (1).jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -167,15 +155,14 @@ section {
 }
 
 .card-content h2 {
-  color: white;
   font-size: 24px;
   margin-bottom: 10px;
 }
 
 .card-content p {
   margin: 5px 0;
-  color: white;
 }
+
 .news,
 .events,
 .weather,
@@ -186,12 +173,14 @@ section {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+
 .news h2,
 .events h2,
 .weather h2,
 .calendar h2 {
   font-size: 1.5em;
 }
+
 .news p,
 .events ul,
 .calendar ul {
@@ -199,19 +188,22 @@ section {
   padding: 0;
   list-style: none;
 }
+
 .events ul,
 .calendar ul {
   padding-left: 20px;
 }
+
 .weather {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .weather iframe {
   border: none;
   width: 100%;
-  height: 600px;
+  height: 400px;
 }
 
 /* Responsive Design */
@@ -220,135 +212,70 @@ section {
     flex-direction: column;
     align-items: center;
   }
+
+  .modal {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    padding: 15px;
+  }
+
+  .modal-content {
+    padding: 10px;
+  }
+
+  #modal-title {
+    font-size: 24px;
+  }
+
+  #modal-info {
+    font-size: 18px;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 280px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
 }
 
-nav {
-  background-color: #333;
-  padding: 10px;
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .modal {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .skin-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  #modal-title {
+    font-size: 20px;
+  }
+
+  #modal-info {
+    font-size: 16px;
+  }
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: center; /* Center align the navigation items */
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 10px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  padding: 8px 16px;
-  background-color: #444;
-  border-radius: 4px;
-  transition: background-color 0.3s;
-}
-
-nav ul li a:hover {
-  background-color: #555;
-}
-
-section {
-  padding: 20px;
-  max-width: 800px;
-  margin: 20px auto;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-  color: #333;
-  font-size: 24px;
-}
-
-p {
-  color: #666;
-  line-height: 1.6;
-}
-
-ul {
-  margin-top: 10px;
-  list-style-type: square;
-  padding-left: 20px;
-}
-
-ul li {
-  margin-bottom: 10px;
-  color: #555;
-}
-
-/* Form styles */
-form {
-  margin-top: 20px;
-}
-
-label {
-  display: block;
-  margin-bottom: 8px;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-input[type="submit"] {
-  background-color: #333;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover {
-  background-color: #555;
-}
-
-/* Overlay styles */
-#overlay {
-  display: none; /* Hidden by default */
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
-  color: white;
-  text-align: center;
-  padding: 0; /* Remove default padding */
-  box-sizing: border-box;
-  z-index: 1; /* Ensure it is on top */
-}
-
-#card {
-  background: white;
-  color: black;
-  border-radius: 20px; /* Remove border radius to take full screen */
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  overflow: hidden; /* Allow scrolling if content overflows */
-}
-
-#card p {
-  margin-top: 20px;
-  color: black;
-}
 /* Additional styles for monarchy requirements */
 .monarchy-requirements {
   margin-top: 20px;
@@ -370,6 +297,7 @@ input[type="submit"]:hover {
   margin-bottom: 10px;
   color: #555;
 }
+
 /* General styling for the history section */
 .history {
   padding: 20px;
